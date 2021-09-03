@@ -1,0 +1,247 @@
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    font-family: "Raleway-R"
+html
+    background: #E5E5E5
+    font-size: 15px
+.container
+    max-width: 1200px
+    margin: auto
+    width: 100%
+.header
+    height: 60px 
+    background: #fff
+    border-bottom: 1px solid #C7C7C7
+    &__block
+        align-items: center
+        display: flex
+        justify-content: space-between
+    &__logo
+        font-family: "Raleway-B"
+        font-size: 1.4rem
+        text-decoration: none
+        color: black
+    &__menu
+        display: flex
+        width: 20px
+        height: 20px
+        background-image: url(../img/burger_menu.svg)
+        cursor: pointer
+.accession
+    margin-top: 24px
+    &__way
+        margin-top: 32px
+        margin-bottom: 8px
+        display: flex
+        font-size: 0.85rem
+.name
+    margin-bottom: 12px
+    &__page
+        margin-bottom: 40px
+    &__option
+        font-size: 1rem
+        margin-bottom: 4px
+.settings
+    max-width: 840px
+    width: 100%
+    height: 460px
+    background: #fff
+    border: 1px solid #C7C7C7
+    border-radius: 20px
+    padding-left: 24px
+    padding-top: 20px
+    padding-bottom: 20px
+    padding-right: 32px
+.description
+    color: #818181
+    &__option
+        color: #818181
+        width: 446px
+.site
+    margin-bottom: -30px
+    margin-top: 40px
+    font-weight: normal
+    font-size: 0.78rem
+    text-transform: uppercase
+.list
+    display: flex
+    margin-top: 16px
+    align-items: flex-end
+    flex-direction: column
+@font-face 
+    font-family: "Raleway-B"
+    src: url(../font/Raleway-Bold.ttf)
+@font-face 
+    font-family: "Raleway-R"
+    src: url(../font/Raleway-Regular.ttf)
+h1
+    font-family: "Raleway-B" 
+.dot
+    padding: 0px 2px
+.back
+    display: flex
+    align-items: center
+    text-decoration: none
+    color: black
+    font-family: "Raleway-B"
+    margin-bottom: -56px
+    width: 100px
+    &__img
+        margin-right: 0.75rem
+        width: 39px
+        height: 39px
+        border-radius: 50%
+        background: #fff url(../img/arrow.svg) no-repeat center 
+        border: 1px solid #C7C7C7
+    &:hover
+        color: #4D1BC1
+        transition: 0.5s
+    &:hover>&__img
+        filter: invert(100%)
+        transition: 0.5s
+.pages
+    text-decoration: none
+    color: black
+    &:hover
+        color: #4D1BC1
+    &__ways
+        margin-left: 350px
+    &__block
+        background: #FFFFFF
+        border: 1px solid #C7C7C7
+        box-sizing: border-box
+        border-radius: 20px
+        max-width: 300px
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        margin-right: 50px
+    &__element
+        text-decoration: none
+        color: #1C1E20
+        padding-left: 20px   
+        margin: 12px 0px
+        font-family: "Raleway-B"
+        &:hover
+            transition: 0.5s
+            padding-left: 18px
+            color: #4D1BC1
+            border-left: 2px solid #4A1ABB
+    &__settings
+        display: flex
+.choice
+    display: flex
+    margin-bottom: 24px
+    &:last-child
+        margin-bottom: 0
+.rad
+    margin-top: 2px
+    margin-right: 8px
+    width: 0
+    height: 0
+    cursor: pointer
+    &::before
+        content: ''
+        display: block
+        border: 2px solid #C7C7C7
+        position: absolute
+        width: 12px
+        height: 12px
+        border-radius: 50%
+    &:checked
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            background: #4A1ABB
+            width: 8px
+            height: 8px
+            border-radius: 50%
+            margin-top: 4px
+            margin-left: 4px
+.pass
+    outline: none
+    border: 0
+    border-bottom: 1px solid #C7C7C7
+    padding-bottom: 8px
+    width: 288px
+    &__type
+        margin-top: 24px
+        color: #1C1E20
+        font-size: 13px
+.button
+    border: none
+    line-height: 40px
+    font-family: "Raleway-B"
+    border-radius: 20px
+    align-items: center
+    &__block
+        margin-top: 32px
+        display: flex
+        justify-content: flex-end
+    &--primary
+        background: #4A1ABB
+        padding: 0px 16px
+        color: #fff
+        cursor: pointer
+        margin-left: 28px
+        &:hover
+            box-shadow: 0 0 10px #4A1ABB
+            transition: 0.8s
+    &--outline
+        background: #fff
+        padding: 0px 15px
+        color: #1C1E20
+        cursor: pointer
+        border: 1px solid #C7C7C7
+        line-height: 39px
+        &:hover
+            box-shadow: 0 0 10px #1C1E20
+            transition: 0.8s
+label
+    margin-left: 16px
+    cursor: pointer
+.head
+    height: 60px
+    align-items: center
+    background: #FFFFFF
+    border-bottom: 1px solid #C7C7C7
+    &__block
+    margin: 0px 40px
+    display: flex
+    justify-content: space-between
+.nav
+    &__link
+        font-family: "Raleway-B"
+        color: #1C1E20
+        flex: none
+        flex-grow: 0
+        margin: 10px 0px
+        text-decoration: none
+        padding: 10px
+        &__img
+            display: flex
+            align-items: center
+    &__link:hover
+        color:#4D1BC1 
+        transition: 0.5s
+    &__head
+        display: flex
+        width: 363px
+        justify-content: space-between
+    &__help
+        width: 126px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__border
+        width: 549px
+        display: flex
+        justify-content: space-between
+        align-items: center
+.account
+       margin-left: 16px
+       display: none
